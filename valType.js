@@ -10,7 +10,7 @@ Parameters:
 val - variable of which to return type
 */
 
-var valType = function(val){
+var valType = function valType(val){
 	//Regex
 	if (val instanceof RegExp){
 		return 'regex';
