@@ -1,12 +1,58 @@
-# tidytype
+# TidyType
+Same as native function `typeof` but:
+-  returns `"regex"` for regular expression,
+- `"array"` for array, 
+- `"null"` for null, 
+- `"NaN"` for NaN and
+- `"arguments"` for arguments, the native JS object.
 
-Same as native function `typeof` but returns `"regex"` for regular expression,
-`"array"` for array, `"null"` for null, `"NaN"` for NaN and
-`"arguments"` for arguments, the native JS object.
+## How to use
+### Prerequisites
+None
 
-## Parameters:
-val - variable of which to return type
+### Parameters
+val - variable or value of which to return type
 
-## TO-DO
-- Add sample code
-- Add tests
+### Example
+```javascript
+//Undefined type
+valType() //'undefined'
+valType(undefined) //'undefined'
+
+//Number type
+valType(0) //'number'
+valType(1) //'number'
+
+//NaN type
+valType(NaN) //'NaN'
+
+//String type
+valType('helloworld') //'string'
+valType('') //'string'
+
+//Boolean type
+valType(true) //'boolean'
+valType(false) //'boolean'
+
+//Function type
+valType(function(){}) //'function'
+
+//Object type
+valType({}) //'object'
+
+//Array type
+valType([]) //'array'
+
+//Null type
+valType(null) //'null'
+
+//Regex type
+valType(/hello/) //'regex'
+
+//Native arguments object type
+var foo = function foo(a){
+	return valType(arguments);
+}
+foo(1) //'arguments'
+});
+```
