@@ -50,3 +50,5 @@ var valType = function valType(val){
 		return type;
 	}
 };
+
+module.exports = valType;
