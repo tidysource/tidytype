@@ -50,7 +50,7 @@ valType(null) //'null'
 valType(/hello/) //'regex'
 
 //Native arguments object type
-var foo = function foo(a){
+var foo = function foo(bar){
 	return valType(arguments);
 }
 foo(1) //'arguments'

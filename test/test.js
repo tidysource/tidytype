@@ -14,7 +14,7 @@ var valType = require('../index.js');
 Tests
 =====
 */
-var foo = function foo(a){
+var foo = function foo(bar){
 	return valType(arguments);
 }
 
