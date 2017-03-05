@@ -4,7 +4,8 @@ Same as native function `typeof` but:
 - `"array"` for array, 
 - `"null"` for null, 
 - `"NaN"` for NaN and
-- `"arguments"` for arguments, the native JS object.
+- `"arguments"` for [arguments][1], the native JS object.
+[1]: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments
 
 ## How to use
 ### Prerequisites
