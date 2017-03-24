@@ -16,6 +16,8 @@ val - variable or value of which to return type
 
 ### Example
 ```javascript
+var valType = require('tidyttype');
+
 //Undefined type
 valType() //'undefined'
 valType(undefined) //'undefined'
